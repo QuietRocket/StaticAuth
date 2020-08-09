@@ -2,7 +2,8 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c",
+    "build": "echo",
+    "build-old": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public",
     "validate": "svelte-check"
@@ -23,6 +24,7 @@
     "@tsconfig/svelte": "^1.0.0"
   },
   "dependencies": {
+    "@vercel/node": "^1.7.4",
     "sirv-cli": "^1.0.0"
   }
 }
