@@ -10,7 +10,7 @@ JSON with padding essentially consists of having a callback function on the site
 # API Structure
 Code for the `/api/cors` endpoint is located in [cors.ts](https://github.com/QuietRocket/StaticAuth/blob/master/api/cors.ts).
 
-Code for `/api/jsonp.js` dynamically generated script is located in [jsonp.ts](https://github.com/QuietRocket/StaticAuth/blob/master/api/jsonp.ts).
+Code for `/api/jsonp.js` dynamically generated script is located in [jsonp.js.ts](https://github.com/QuietRocket/StaticAuth/blob/master/api/jsonp.js.ts).
 
 Code that is common to the CORS and JSONP approach are placed in [utils.ts](https://github.com/QuietRocket/StaticAuth/blob/master/api/utils.ts).
 
