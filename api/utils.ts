@@ -1,5 +1,6 @@
 import { get } from 'http';
 
+// Promise wrapper around Node's verbose and relatively low level HTTP module.
 export const authCheck = (token: string): Promise<string> =>
     new Promise((resolve, reject) => {
         const checkUrl = 'http://login.uci.edu/ucinetid/webauth_check?ucinetid_auth=';
@@ -20,6 +21,7 @@ export const authCheck = (token: string): Promise<string> =>
         });
     });
 
+// Transform from 'a=b\nc=d' to '{"a": "b", "c": "d"}' (JSON).
 export const format = (data: string): any => {
     const obj = {};
     data
