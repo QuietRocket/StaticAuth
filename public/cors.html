@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORS Example</title>
+</head>
+<body>
+    <script>
+        async function handleToken(token) {
+            const url = `https://webauth.vercel.app/api/cors?token=${token}`;
+            const res = await fetch(url);
+            const text = await res.text();
+            onComplete(text);
+        }
+    </script>
+    <script src="common.js"></script>
+</body>
+</html>
